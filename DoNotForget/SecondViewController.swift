@@ -15,8 +15,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func addItem(sender: AnyObject) {
         var myString = textField.text
-        var newString = myString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        //let emptySpace = NSCharacterSet.whitespaceCharacterSet()
+        var newString = myString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())       
         if newString.isEmpty {
             error.text = "Please fill the text field"
         }else{
